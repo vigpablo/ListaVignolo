@@ -1,0 +1,7 @@
+<ul>
+    <li [ngClass]="{verde: estaCargando, azul:!estaCargando}"
+        [style.font-size]="estaCargando ? '48px': '12px'" 
+        *ngFor="let alumno of alumnos" 
+        >{{alumno.nombre | uppercase}} {{alumno.edad}}</li>
+</ul>
+
